@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript for Beginners - Practice Exercises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 JavaScript for Beginners</h1>
+            <p class="subtitle">Practice exercises to learn JavaScript - No signup required!</p>
+        </header>
+
+        <div class="exercise-list" id="exerciseList">
+            <!-- Exercises will be dynamically loaded here -->
+        </div>
+
+        <div class="exercise-view" id="exerciseView" style="display: none;">
+            <div class="exercise-header">
+                <button class="back-btn" id="backBtn">← Back to Exercises</button>
+                <h2 id="exerciseTitle"></h2>
+            </div>
+            
+            <div class="exercise-content">
+                <div class="exercise-description" id="exerciseDescription"></div>
+                
+                <div class="code-editor-container">
+                    <div class="editor-header">
+                        <span>Your Code</span>
+                        <button class="run-btn" id="runBtn">▶ Run Code</button>
+                    </div>
+                    <textarea id="codeEditor" class="code-editor" spellcheck="false"></textarea>
+                </div>
+
+                <div class="output-container">
+                    <div class="output-header">Output</div>
+                    <div id="output" class="output"></div>
+                </div>
+
+                <div class="hint-container" id="hintContainer" style="display: none;">
+                    <div class="hint-header">💡 Hint</div>
+                    <div id="hintContent" class="hint-content"></div>
+                </div>
+
+                <div class="exercise-actions">
+                    <button class="hint-btn" id="hintBtn">Show Hint</button>
+                    <button class="solution-btn" id="solutionBtn">Show Solution</button>
+                    <button class="reset-btn" id="resetBtn">Reset Code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="exercises.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
